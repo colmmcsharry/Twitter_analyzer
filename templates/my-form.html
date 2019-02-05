@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Twitter Analyzer</title>
+     <link rel="stylesheet" type="text/css" href="../static/mystyle.css">
+  </head>
+ <body>
+  	<h1>My Twitter analyzer</h1>
+ <form method="GET">
+    <input name="text">
+    <input type="submit">
+</form> 	
+<form method = "POST" action ="/my-form">
+	<input name = "text">
+	<input type = "submit">
+	</form>
+	{% for tweet in tweets %}
+	<div> {{ tweet }} </div>
+	{% endfor %}
+ 
+  	
+  </body>
+</html>
