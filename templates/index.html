@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
-     <link rel="stylesheet" type="text/css" href="../static/mystyle.css">
+     <link rel="stylesheet" type="text/css" href="/static/mystyle.css"> 
+     <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
   </head>
   <body>
-  <div>
-  <h1> This is my Twitter analyzer
-  	 <form method="GET">
+<div id = 'headdiv'>
+  <img src="https://pmcvariety.files.wordpress.com/2018/04/twitter-logo.jpg?w=1000" alt="" style="width:150px;height:150px;">
+<h1> This is my Twitter analyzer</h1>
+</div>   
+  <div id = 'main'>
+  	 <form method="GET"> <br>
         <input name="text">
         <input type="submit">
-    </form> 
+    </form> <br>
      {% for message in c %}
-    <div>{{ message }}</div>
+    <div class = "tweets">{{ message }}</div><br>
     {% endfor %}
   </div>
   </body>
 </html>
+
+<!--   <link rel="stylesheet" type="text/css" href="../static/mystyle.css"> -->

@@ -1,7 +1,16 @@
-div {background-color: lightblue;
+body {background-color: beige;}
+
+#main {background-color: lightblue;
 text-align: center;
-border-style: dashed;}
+border-style: dashed;
+border-color: lightgrey;
+font-size: 20px;}
 
-h1 {background-color: blue;}
+#tweets {border-style: dashed;
+	border-color: lightgrey;}
 
-p {font: arial 10 black;}
+#headdiv {background-color: powderblue;
+color: ghostwhite;	
+text-align: center;}
+
+/*p {font: arial 12 black;}*/
